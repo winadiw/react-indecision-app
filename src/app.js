@@ -1,6 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import IndecisionApp from "./components/IndecisionApp";
 
-const template = <p>THIS IS JSX</p>;
-
-ReactDOM.render(template, document.getElementById("app"));
+ReactDOM.render(
+  <IndecisionApp options={["Test 1", "Test 2"]} />,
+  document.getElementById("app")
+);
