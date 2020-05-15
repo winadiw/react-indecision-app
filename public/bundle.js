@@ -90,23 +90,10 @@
 /*!********************!*\
   !*** ./src/app.js ***!
   \********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _person_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./person.js */ \"./src/person.js\");\n// import { square, add } from './utils.js'\n\n// console.log('new app.js is running');\n\n// console.log(square(2));\n\n// console.log(add(123, 56));\n\n\n\nconsole.log(Object(_person_js__WEBPACK_IMPORTED_MODULE_0__[\"isAdult\"])(5))\nconsole.log(Object(_person_js__WEBPACK_IMPORTED_MODULE_0__[\"canDrink\"])(21))\n\n//# sourceURL=webpack:///./src/app.js?");
-
-/***/ }),
-
-/***/ "./src/person.js":
-/*!***********************!*\
-  !*** ./src/person.js ***!
-  \***********************/
-/*! exports provided: isAdult, canDrink */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"isAdult\", function() { return isAdult; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"canDrink\", function() { return canDrink; });\nconst isAdult = (age) => {\n    return age >= 18;\n}\n\nconst canDrink = (age) => {\n    return age >= 21\n}\n\n//# sourceURL=webpack:///./src/person.js?");
+eval("throw new Error(\"Module parse failed: Unexpected token (4:17)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n| import ReactDOM from 'react-dom';\\n| \\n> const template = <p>Testing 123</p>;\\n| \\n| ReactDOM.render(template, document.getElementById(\\\"app\\\"));\");\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ })
 
