@@ -1,3 +1,4 @@
+// Add Option Error
 .add-option-error {
   color: $off-white;
   font-style: italic;
@@ -8,6 +9,7 @@
 // Add Option
 .add-option {
   display: flex;
+  flex-direction: column; //stack for mobile
   padding: $m-size;
 }
 
@@ -17,6 +19,15 @@
   border-bottom: .3rem solid darken($color: $dark-blue, $amount: 10%);
   color: $off-white;
   flex-grow: 1; // to cope with all the remaining spaces
-  margin-right: $s-size;
+  margin: 0 0 $s-size 0; //margin for mobile
   padding: $s-size;
+}
+
+@media(min-width: $desktop-breakpoint) {
+  .add-option {
+    flex-direction: row; //line up for desktop
+  }
+  .add-option__input {
+    margin: 0 $s-size 0 0; //adjust margin for desktop
+  }
 }
